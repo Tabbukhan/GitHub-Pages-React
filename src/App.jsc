@@ -2,17 +2,11 @@ import React from "react";
 
 function App() {
   const teamMembers = [
-    { name: "Shreya", role: "DevOps Engineer", skills: ["AWS", "Kubernetes", "Terraform", "Jenkins"] },
-    { name: "Ayush", role: "Cloud Engineer", skills: ["Azure", "Ansible", "Helm", "Docker"] },
-    { name: "Anup", role: "SRE", skills: ["Prometheus", "Grafana", "Python", "Linux"] },
-    { name: "Rishikesh", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-    { name: "Praveen", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-    { name: "Kapil", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-    { name: "Shivam", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-    { name: "Tabasum", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-    { name: "Shubhek", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
-
-];
+    { name: "Tabasum Khan", role: "DevOps Engineer", skills: ["AWS", "Kubernetes", "Terraform", "Jenkins"] },
+    { name: "Alice Johnson", role: "Cloud Engineer", skills: ["Azure", "Ansible", "Helm", "Docker"] },
+    { name: "Michael Smith", role: "SRE", skills: ["Prometheus", "Grafana", "Python", "Linux"] },
+    { name: "Sofia Lee", role: "Security Engineer", skills: ["IAM", "KMS", "Vault", "Zero Trust"] }
+  ];
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", padding: "20px", background: "#f4f6f8", minHeight: "100vh" }}>
