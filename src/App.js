@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px", background: "#f4f6f8", minHeight: "100vh" }}>
+      {/* Header */}
+      <header style={{ marginBottom: "20px", textAlign: "center" }}>
+        <h1 style={{ color: "#0d6efd" }}>🚀 DevOps Department Dashboard</h1>
+        <p>Office Monitoring & CI/CD Overview</p>
       </header>
+
+      {/* Dashboard Grid */}
+      <div style={{ 
+        display: "grid", 
+        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", 
+        gap: "20px" 
+      }}>
+        
+        {/* Deployments Card */}
+        <div style={cardStyle}>
+          <h2>📦 Deployments</h2>
+          <p>Latest Deployment: <b>v1.2.3</b></p>
+          <p>Status: ✅ Successful</p>
+        </div>
+
+        {/* CI/CD Pipelines Card */}
+        <div style={cardStyle}>
+          <h2>⚙️ CI/CD Pipelines</h2>
+          <p>Active Pipelines: 5</p>
+          <p>Last Run: 2 mins ago</p>
+        </div>
+
+        {/* Cloud Resources Card */}
+        <div style={cardStyle}>
+          <h2>☁️ Cloud Resources</h2>
+          <p>EC2 Instances: 12</p>
+          <p>K8s Pods: 48</p>
+        </div>
+
+        {/* Monitoring Card */}
+        <div style={cardStyle}>
+          <h2>📊 Monitoring</h2>
+          <p>CPU Usage: 65%</p>
+          <p>Memory Usage: 72%</p>
+        </div>
+
+        {/* Alerts Card */}
+        <div style={cardStyle}>
+          <h2>🚨 Alerts</h2>
+          <p>Critical: 1</p>
+          <p>Warnings: 3</p>
+        </div>
+      </div>
     </div>
   );
 }
 
+const cardStyle = {
+  background: "white",
+  padding: "20px",
+  borderRadius: "12px",
+  boxShadow: "0 4px 8px rgba(0,0,0,0.1)"
+};
+
 export default App;
+
